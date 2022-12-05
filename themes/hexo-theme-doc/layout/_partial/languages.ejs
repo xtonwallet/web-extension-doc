@@ -1,0 +1,13 @@
+<% const languages = display_languages();
+if (languages.length > 1) {%>
+  <!-- <div class="current-language-item"><%= __('current_language') %> <%= language_name(page_language()) %> </div> -->
+  <div class="available-translations"><%= __('available_translations') %>
+    <% languages.forEach((language) => { %>
+      <% if (page_language() != language) {%>
+        <a href="<%= url_for(i18n_path(!is_default_language(language) ? language : null)) %>" class="language-item">
+            <%= language_name(language) %>
+        </a>
+      <% } %>
+    <% }) %>
+  </div>
+<%} %>

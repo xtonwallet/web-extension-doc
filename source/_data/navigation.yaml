@@ -1,0 +1,193 @@
+{
+  "logo": {
+    "text": "XTON wallet",
+    "type": "link",
+    "path": "index.html",
+    "path_ru": "ru/index.html"
+  },
+  "main": [
+    {
+      "text": "Home",
+      "text_ru": "Главная",
+      "type": "link",
+      "path": "/",
+      "path_ru": "ru/"
+    },
+    {
+      "text": "Installation",
+      "text_ru": "Установка",
+      "type": "link",
+      "path": "installation.html",
+      "path_ru": "ru/installation.html"
+    },
+    {
+      "text": "UI",
+      "text_ru": "Интерфейс",
+      "type": "label"
+    },
+    {
+      "text": "First run",
+      "text_ru": "Первый запуск",
+      "type": "link",
+      "path": "ui/first_run.html",
+      "path_ru": "ru/ui/first_run.html"
+    },
+    {
+      "text": "Popup description",
+      "text_ru": "Описание попап окна",
+      "type": "link",
+      "path": "ui/popup.html",
+      "path_ru": "ru/ui/popup.html"
+    },
+    {
+      "text": "Create a new wallet",
+      "text_ru": "Создать новый кошелёк",
+      "type": "link",
+      "path": "ui/create_new_wallet.html",
+      "path_ru": "ru/ui/create_new_wallet.html"
+    },
+    {
+      "text": "Restore a new wallet",
+      "text_ru": "Восстановить новый кошелёк",
+      "type": "link",
+      "path": "ui/restore_new_wallet.html",
+      "path_ru": "ru/ui/restore_new_wallet.html"
+    },
+    {
+      "text": "Send a transaction",
+      "text_ru": "Отправить транзакцию",
+      "type": "link",
+      "path": "ui/send_transaction.html",
+      "path_ru": "ru/ui/send_transaction.html"
+    },
+    {
+      "text": "Import a token",
+      "text_ru": "Импортировать токен",
+      "type": "link",
+      "path": "ui/import_token.html",
+      "path_ru": "ru/ui/import_token.html"
+    },
+    {
+      "text": "Send a token transaction",
+      "text_ru": "Отправить транзакцию с токеном",
+      "type": "link",
+      "path": "ui/send_token_transaction.html",
+      "path_ru": "ru/ui/send_token_transaction.html"
+    },
+    {
+      "text": "Settings",
+      "text_ru": "Настройки",
+      "type": "link",
+      "path": "ui/settings.html",
+      "path_ru": "ru/ui/settings.html"
+    },
+    {
+      "text": "Pin code",
+      "text_ru": "Пин код",
+      "type": "link",
+      "path": "ui/pin_code.html",
+      "path_ru": "ru/ui/pin_code.html"
+    },
+    {
+      "text": "Backup",
+      "text_ru": "Резервная копия",
+      "type": "label"
+    },
+    {
+      "text": "Backup wallet",
+      "text_ru": "Резервная копия кошелька",
+      "type": "link",
+      "path": "ui/backup_wallet.html",
+      "path_ru": "ru/ui/backup_wallet.html"
+    },
+    {
+      "text": "Backup as keystore",
+      "text_ru": "Резервная копия хранилища",
+      "type": "link",
+      "path": "ui/backup/backup_wallet_keystore.html",
+      "path_ru": "ru/ui/backup/backup_wallet_keystore.html"
+    },
+    {
+      "text": "Backup as keys",
+      "text_ru": "Резервная копия ключей",
+      "type": "link",
+      "path": "ui/backup/backup_wallet_keys.html",
+      "path_ru": "ru/ui/backup/backup_wallet_keys.html"
+    },
+    {
+      "text": "Restore",
+      "text_ru": "Восстановление",
+      "type": "label"
+    },
+    {
+      "text": "Restore wallet",
+      "text_ru": "Восстановить кошелёк",
+      "type": "link",
+      "path": "ui/restore_wallet.html",
+      "path_ru": "ru/ui/restore_wallet.html"
+    },
+    {
+      "text": "Restore wallet from keystore",
+      "text_ru": "Восстановить кошелёк из хранилища",
+      "type": "link",
+      "path": "ui/restore/restore_wallet_keystore.html",
+      "path_ru": "ru/ui/restore/restore_wallet_keystore.html"
+    },
+    {
+      "text": "Restore wallet from keys (legacy)",
+      "text_ru": "Восстановить кошелёк из ключей (устар.)",
+      "type": "link",
+      "path": "ui/restore/restore_wallet_keys.html",
+      "path_ru": "ru/ui/restore/restore_wallet_keys.html"
+    },
+    {
+      "text": "Restore wallet from seed phrase (legacy)",
+      "text_ru": "Восстановить кошелёк из сид фразы (устар.)",
+      "type": "link",
+      "path": "ui/restore/restore_wallet_seed.html",
+      "path_ru": "ru/ui/restore/restore_wallet_seed.html"
+    },
+    {
+      "text": "DApp",
+      "type": "label"
+    },
+    {
+      "text": "Web3-like interface",
+      "text_ru": "Web3 подобный интерфейс",
+      "type": "link",
+      "path": "api/web3lib/requests.html",
+      "path_ru": "ru/api/web3lib/requests.html"
+    },
+    {
+      "text": "SUPPORT AND FEEDBACK",
+      "text_ru": "ПОДДЕРЖКА И ОБР. СВЯЗЬ",
+      "type": "label"
+    },
+    {
+      "text": "Send a message to us",
+      "text_ru": "Отправить нам сообщение",
+      "type": "link",
+      "path": "support.html",
+      "path_ru": "ru/support.html"
+    },
+    {
+      "text": "Raise an issue on Github",
+      "text_ru": "Создать вопрос на Github",
+      "type": "link",
+      "path": "https://github.com/xtonwallet/web-extension/issues/new"
+    },
+    {
+      "text": "Privacy policy",
+      "text_ru": "Соглашение о конфиденциальности",
+      "type": "link",
+      "path": "privacy.html",
+      "path_ru": "ru/privacy.html"
+    },
+    {
+      "text": "Changelog",
+      "text_ru": "Список изменений",
+      "type": "link",
+      "path": "https://github.com/xtonwallet/web-extension/blob/main/CHANGELOG.md"
+    }
+  ]
+}

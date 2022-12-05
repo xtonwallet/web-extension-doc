@@ -1,0 +1,31 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: XTON wallet
+author: XTON wallet team
+timezone: UTC
+language:
+- en
+- ru
+url: https://docs.xtonwallet.com
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+# root: /
+
+# Writing
+relative_link: false
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: hexo-theme-doc
+
+theme_config:
+  favicon: images/favicon.ico
+
+deploy:
+- type: git
+  repo: https://github.com/xtonwallet/docs.xtonwallet.github.io
