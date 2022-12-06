@@ -8,6 +8,6 @@ you may contact us using the information below.
 
 askme@xtonwallet.com
 
-Telegram @xtonwallet
+Telegram [@xtonwallet](https://t.me/xtonwallet)
 
-Twitter @xtonwallet
+Twitter [@xtonwallet](https://twitter.com/xtonwallet)

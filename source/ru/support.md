@@ -8,6 +8,6 @@ title: Поддеркжа веб-расширения XTON кошелек
 
 askme@xtonwallet.com
 
-Телеграм @xtonwallet
+Телеграм [@xtonwallet](https://t.me/xtonwallet)
 
-Твиттер @xtonwallet
+Твиттер [@xtonwallet](https://twitter.com/xtonwallet)
