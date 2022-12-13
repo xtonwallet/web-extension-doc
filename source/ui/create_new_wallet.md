@@ -1,6 +1,28 @@
 title: Create new wallet
 ---
 
+# Enable web-extenstion
+
+1. Find the extensions icon and click
+
+<img src="/images/open_extension/1.png">
+
+2. You will see the installed web-extensions
+
+<img src="/images/open_extension/2.png">
+
+3. Select the XTON wallet and click on "Pin" icon
+
+<img src="/images/open_extension/3.png">
+
+4. The icon will be displayed on the panel
+
+<img src="/images/open_extension/4.png">
+
+5. Click on the XTON wallet icon to open web-extension
+
+<img src="/images/open_extension/5.png">
+
 # Create a new wallet
 
 This flow allows creating the first account in your wallet. This flow contains from several steps:
