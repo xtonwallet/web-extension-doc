@@ -58,7 +58,7 @@ DApp может запросить необходимые разрешения �
   - [ton\_signMessage](#ton-signmessage)
   - [ton\_getNaclBoxPublicKey](#ton-getnaclboxpublickey)
   - [ton\_getSignature](#ton-getsignature)
-  - [ton\_crypto\_generate\_random\_bytes](#ton-crypto-generate-random_bytes)
+  - [ton\_crypto\_generate\_random\_bytes](#ton-crypto-generate-random-bytes)
   - [ton\_encryptMessage](#ton-encryptmessage)
   - [ton\_decryptMessage](#ton-decryptmessage)
   - [ton\_subscribe](#ton-subscribe)
@@ -115,9 +115,10 @@ DApp может запросить список методов, разрешен
 
 использует приватные ключи - **нет**
 должно быть разрешено - **да**
-обязательные параметры - **name как строка, symbol как строка, decimals как число, address как строка, icon как строка, type как строка ("74" для Jetton, "64" для NFT, "81" для DNS)**
+обязательные параметры - **name как строка, address как строка, icon как строка, type как строка ("74" для Jetton, "64" для NFT)**
 
 ```js
+  //jetton
   window.ton
     .request({
       method: "wallet_watchAsset",
@@ -127,6 +128,26 @@ DApp может запросить список методов, разрешен
                "address": "EQB6zyR2KdDMByP6pbqgGk85iP7OMToGELWQJ9IE3LAMNsUE",
                "icon": "https://bitcoincash-example.github.io/website/logo.png",
                "type": "74"
+               },
+    })
+    .then((result) => {
+      console.log(result);
+      //
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+
+  //nft
+  window.ton
+    .request({
+      method: "wallet_watchAsset",
+      params: {"address": "EQAOQdwdw8kGftJCSFgOErM1mBjYPe4DBPq8-AhF6vr9si5N",
+               "name": "Anonymous Telegram Numbers",
+               "description": "These anonymous numbers can be used to create Telegram accounts that are not tied to SIM cards.",
+               "externalLink": "https://fragment.com/numbers",
+               "icon": "https://nft.fragment.com/numbers.svg",
+               "type": "64"
                },
     })
     .then((result) => {

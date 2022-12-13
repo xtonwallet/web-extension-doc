@@ -116,7 +116,7 @@ Method to add asset for watching by user
 
 use private keys - **no**
 must be allowed - **yes**
-required parameters - **name as string, symbol as string, decimals as number, address as string, icon as string, type as string ("74" for Jetton, "64" for NFT, "81" for DNS)**
+required parameters - **name as string, address as string, icon as string, type as string ("74" for Jetton, "64" for NFT)**
 
 ```js
   window.ton
@@ -128,6 +128,26 @@ required parameters - **name as string, symbol as string, decimals as number, ad
                "address": "EQB6zyR2KdDMByP6pbqgGk85iP7OMToGELWQJ9IE3LAMNsUE",
                "icon": "https://bitcoincash-example.github.io/website/logo.png",
                "type": "74"
+               },
+    })
+    .then((result) => {
+      console.log(result);
+      //
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+
+  //nft
+  window.ton
+    .request({
+      method: "wallet_watchAsset",
+      params: {"address": "EQAOQdwdw8kGftJCSFgOErM1mBjYPe4DBPq8-AhF6vr9si5N",
+               "name": "Anonymous Telegram Numbers",
+               "description": "These anonymous numbers can be used to create Telegram accounts that are not tied to SIM cards.",
+               "externalLink": "https://fragment.com/numbers",
+               "icon": "https://nft.fragment.com/numbers.svg",
+               "type": "64"
                },
     })
     .then((result) => {

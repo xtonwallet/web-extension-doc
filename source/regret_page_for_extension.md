@@ -5,7 +5,9 @@ title: XTON wallet web-extension regret page
 
 We can't believe that you have uninstalled XTON wallet web-extension for TON blockchain.
 
-<img style="width: 256px; margin-left: auto; margin-right: auto; text-align: center; display: block;" src="/images/sad_cat.gif" />
+
+<img style="margin-left: auto; margin-right: auto; text-align: center; display: block;" src="/images/sad_cat.gif" />
+
 
 If you have a minute to give us information "Why?" and "How can we improve your experience?", please fill **[form](https://forms.gle/P8baoGoUy6Agqh1k7)**
 

@@ -5,7 +5,9 @@ title: Страница сожаления для веб-расширения XT
 
 Мы не можем поверить, что вы удалили веб-расширение XTON кошелёк для блокчейна TON.
 
-<img style="width: 256px; margin-left: auto; margin-right: auto; text-align: center; display: block;" src="/images/sad_cat.gif" />
+
+<img style="margin-left: auto; margin-right: auto; text-align: center; display: block;" src="/images/sad_cat.gif" />
+
 
 Если у вас есть минута, чтобы сообщить нам информацию "Почему?" и "Как мы можем улучшить ваш опыт?", пожалуйста заполните **[форму](https://forms.gle/P8baoGoUy6Agqh1k7)**.
 
