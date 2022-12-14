@@ -4,7 +4,7 @@ title: Установка
 # Вы можете найти версии для вашего браузера ниже
 
 * Chrome [установить](https://chrome.google.com/webstore/detail/xton-wallet/cjookpbkjnpkmknedggeecikaponcalb)
-* Edge [установить](https://github.com/xtonwallet/web-extension/releases)
+* Edge [установить](https://microsoftedge.microsoft.com/addons/detail/xton-wallet/cgadeiniijaimpdmhfklcphfnglpkmll)
 * Firefox [установить](https://github.com/xtonwallet/web-extension/releases)
 * Opera [установить](https://github.com/xtonwallet/web-extension/releases)
 * Safari [установить](https://github.com/xtonwallet/web-extension/releases)
