@@ -438,7 +438,7 @@ DApp может отписываться от событий на блокчей
     .request({
       method: "ton_unsubscribe",
       params: {
-        address: "dbb8b4d172c00bd7115cc50940a75fb62c1609da5aea06709a34252b9b5d4ea5"
+        address: "EQB6zyR2KdDMByP6pbqgGk85iP7OMToGELWQJ9IE3LAMNsUE"
       }
     })
     .then((result) => {
@@ -452,8 +452,8 @@ DApp может отписываться от событий на блокчей
 DApp может слушать сообщения типа "message" для получения информации о транзакции, полученной от блокчейн
 
 ```js
-  window.ton.on("message", function(event) {
-    console.log(event.data);
+  window.ton.on("message", function(data) {
+    console.log(data);
     window.ton.off("message");
   });
 ```
@@ -462,8 +462,8 @@ DApp может слушать сообщения типа "message" для по
 DApp может слушать сообщения типа "endpointChanged" для получения информации о смене сети
 
 ```js
-  window.ton.on("endpointChanged", function(event) {
-    console.log(event.data);
+  window.ton.on("endpointChanged", function(data) {
+    console.log(data);
     window.ton.off("endpointChanged");
   });
 ```
@@ -472,8 +472,8 @@ DApp может слушать сообщения типа "endpointChanged" д�
 DApp может слушать сообщения типа "unlockStateChanged" для получения информации о закрытии/открытии кошелька
 
 ```js
-  window.ton.on("unlockStateChanged", function(event) {
-    console.log(event.data);
+  window.ton.on("unlockStateChanged", function(data) {
+    console.log(data);
     window.ton.off("unlockStateChanged");
   });
 ```
@@ -482,8 +482,8 @@ DApp может слушать сообщения типа "unlockStateChanged" 
 DApp может слушать сообщения типа "accountChanged" для получения информации о смене аккаунта
 
 ```js
-  window.ton.on("accountChanged", function(event) {
-    console.log(event.data);
+  window.ton.on("accountChanged", function(data) {
+    console.log(data);
     window.ton.off("accountChanged");
   });
 ```

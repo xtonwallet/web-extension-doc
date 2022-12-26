@@ -412,9 +412,8 @@ required parameters - **address as string**
     .then((subscriptionId) => {
       window.ton.on("message", (message) => {
         if (message.type === "ton_subscription") {
-          const { data } = message;
-          if (data.subscription === subscriptionId) {
-            console.log(data);
+          if (message.subscriptionId === subscriptionId) {
+            console.log(message.data);
           }
         }
       });
@@ -432,14 +431,14 @@ DApp can unsubscribe on blockchain events
 
 use private keys - **no**
 must be allowed - **yes**
-required parameters - **id as string**
+required parameters - **address as string**
 
 ```js
   window.ton
     .request({
       method: "ton_unsubscribe",
       params: {
-        id: "dbb8b4d172c00bd7115cc50940a75fb62c1609da5aea06709a34252b9b5d4ea5"
+        address: "EQB6zyR2KdDMByP6pbqgGk85iP7OMToGELWQJ9IE3LAMNsUE"
       }
     })
     .then((result) => {
@@ -453,8 +452,8 @@ required parameters - **id as string**
 DApp can listen "message" to receive the transaction information that is received from the blockchain
 
 ```js
-  window.ton.on("message", function(event) {
-    console.log(event.data);
+  window.ton.on("message", function(data) {
+    console.log(data);
     window.ton.off("message");
   });
 ```
@@ -463,8 +462,8 @@ DApp can listen "message" to receive the transaction information that is receive
 DApp can listen "endpointChanged" to receive the information about the network changing
 
 ```js
-  window.ton.on("endpointChanged", function(event) {
-    console.log(event.data);
+  window.ton.on("endpointChanged", function(data) {
+    console.log(data);
     window.ton.off("endpointChanged");
   });
 ```
@@ -473,8 +472,8 @@ DApp can listen "endpointChanged" to receive the information about the network c
 DApp can listen "unlockStateChanged" to receive the information about the lock/unlock state
 
 ```js
-  window.ton.on("unlockStateChanged", function(event) {
-    console.log(event.data);
+  window.ton.on("unlockStateChanged", function(data) {
+    console.log(data);
     window.ton.off("unlockStateChanged");
   });
 ```
@@ -483,8 +482,8 @@ DApp can listen "unlockStateChanged" to receive the information about the lock/u
 DApp can listen "accountChanged" to receive the information about the account changing
 
 ```js
-  window.ton.on("accountChanged", function(event) {
-    console.log(event.data);
+  window.ton.on("accountChanged", function(data) {
+    console.log(data);
     window.ton.off("accountChanged");
   });
 ```
