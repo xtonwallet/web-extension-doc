@@ -3,11 +3,30 @@ title: Web3-подобная библиотека на веб-странице
  
 # Web3-подобная библиотека запросов API основанная на TEPs стандарте
 
-Веб-расширение позволяет взаимодействовать с DApp (децентрализованное приложение) на основе TEPs стандарта. Полная спецификация доступна [здесь](https://addmelater.com).
+Веб-расширение позволяет взаимодействовать с DApp (децентрализованное приложение) на основе TEPs стандарта. Полная спецификация доступна [здесь](https://github.com/ton-blockchain/TEPs/pull/105).
 
 **Ограничения**
 - DApp не может открывать более 15 диалогов запросов одновременно
 - Каждый запрос имеет время жизни. Если пользователь не будет способен подтвердить или отклонить запрос, то после 5 минут DApp получит ошибку таймаута
+
+# Обнаружение провайдера
+
+Для проверки, что веб страница содержит библиотеку запросов Web3 API, вы можете использовать этот код:
+
+```js
+if (typeOf(window.ton) != "undefined" && // всегда должно быть true
+    window.ton.isTEPs105 == true) { // всегда должно быть true
+  //... ваш код здесь
+}
+```
+
+```js
+if (window.ton.isXTONWallet == true) { // если вы хотите проверить, что это XTON кошелёк
+  //... ваш код здесь
+}
+```
+
+Если вы хотите обнаружить какой-то расширенный стандарт, вы можете проверить если  `window.ton.isTEPs[standard_number]` равно true
 
 # Демонстрационная страница
 
@@ -44,25 +63,26 @@ DApp может получить версию TON SDK которая испол�
 ## wallet_requestPermissions
 DApp может запросить необходимые разрешения у пользователя. Не все методы требуют разрешения. Все методы, которые должны быть разрешены пользователем, перечислены ниже:
 - [Web3-подобная библиотека запросов API основанная на TEPs стандарте](#web3-подобная-библиотека-запросов-api-основанная-на-teps-стандарте)
+- [Обнаружение провайдера](#обнаружение-провайдера)
 - [Демонстрационная страница](#демонстрационная-страница)
 - [Поддержка deep link](#поддержка-deep-link)
 - [Наиболее часто используемые методы размещены ниже:](#наиболее-часто-используемые-методы-размещены-ниже)
-  - [wallet\_getSdkVersion](#wallet-getsdkversion)
-  - [wallet\_requestPermissions](#wallet-requestpermissions)
-  - [wallet\_getPermissions](#wallet-getpermissions)
-  - [wallet\_watchAsset](#wallet-watchasset)
-  - [ton\_account](#ton-account)
-  - [ton\_endpoint](#ton-endpoint)
-  - [ton\_sendTransaction](#ton-sendtransaction)
-  - [ton\_sendRawTransaction](#ton-sendrawtransaction)
-  - [ton\_signMessage](#ton-signmessage)
-  - [ton\_getNaclBoxPublicKey](#ton-getnaclboxpublickey)
-  - [ton\_getSignature](#ton-getsignature)
-  - [ton\_crypto\_generate\_random\_bytes](#ton-crypto-generate-random-bytes)
-  - [ton\_encryptMessage](#ton-encryptmessage)
-  - [ton\_decryptMessage](#ton-decryptmessage)
-  - [ton\_subscribe](#ton-subscribe)
-  - [ton\_unsubscribe](#ton-unsubscribe)
+  - [wallet\_getSdkVersion](#wallet_getsdkversion)
+  - [wallet\_requestPermissions](#wallet_requestpermissions)
+  - [wallet\_getPermissions](#wallet_getpermissions)
+  - [wallet\_watchAsset](#wallet_watchasset)
+  - [ton\_account](#ton_account)
+  - [ton\_endpoint](#ton_endpoint)
+  - [ton\_sendTransaction](#ton_sendtransaction)
+  - [ton\_sendRawTransaction](#ton_sendrawtransaction)
+  - [ton\_signMessage](#ton_signmessage)
+  - [ton\_getNaclBoxPublicKey](#ton_getnaclboxpublickey)
+  - [ton\_getSignature](#ton_getsignature)
+  - [ton\_crypto\_generate\_random\_bytes](#ton_crypto_generate_random_bytes)
+  - [ton\_encryptMessage](#ton_encryptmessage)
+  - [ton\_decryptMessage](#ton_decryptmessage)
+  - [ton\_subscribe](#ton_subscribe)
+  - [ton\_unsubscribe](#ton_unsubscribe)
 - [События](#события)
   - [message](#message)
   - [endpointChanged](#endpointchanged)

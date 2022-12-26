@@ -3,12 +3,31 @@ title: Web3-like library in page
 
 # Web3-like library request API based on TEPs standard
 
-The wallet browser extension allows interaction with DApp based on TEPs standard. Full specification places [here](https://addmelater.com).
+The wallet browser extension allows interaction with DApp based on TEPs standard. Full specification places [here](https://github.com/ton-blockchain/TEPs/pull/105).
 
 **Restrictions**
 - DApp can't open more than 15 dialogs simultaneously
 - Each request has a life time. If the user won't be able to confirm or decline the request, after 5 minutes DApp will receive the timeout error
  
+# Provider detection
+
+To detect if a web page contains the Web3 library request API, you can use this code:
+
+```js
+if (typeOf(window.ton) != "undefined" && // always must be true
+    window.ton.isTEPs105 == true) { // always must be true
+  //... your code here
+}
+```
+
+```js
+if (window.ton.isXTONWallet == true) { // if you want to check that wallet is XTON
+  //... your code here
+}
+```
+
+If you want to detect some extended standard, you have to check if `window.ton.isTEPs[standard_number]` is true
+
 # Demo page
 
 All methods from specification TEPs are available for the testing on [demo page](https://demopage.xtonwallet.com/)
@@ -45,25 +64,26 @@ required parameters - **no**
 ## wallet_requestPermissions
 DApp can request needed permissions from user. Not all methods demands to be permitted. The all methods, that must be allowed by user, lists below:
 - [Web3-like library request API based on TEPs standard](#web3-like-library-request-api-based-on-teps-standard)
+- [Provider detection](#provider-detection)
 - [Demo page](#demo-page)
 - [Supporting deep link](#supporting-deep-link)
 - [The most frequently used methods places below:](#the-most-frequently-used-methods-places-below)
-  - [wallet\_getSdkVersion](#wallet-getsdkversion)
-  - [wallet\_requestPermissions](#wallet-requestpermissions)
-  - [wallet\_getPermissions](#wallet-getpermissions)
-  - [wallet\_watchAsset](#wallet-watchasset)
-  - [ton\_account](#ton-account)
-  - [ton\_endpoint](#ton-endpoint)
-  - [ton\_sendTransaction](#ton-sendtransaction)
-  - [ton\_sendRawTransaction](#ton-sendrawtransaction)
-  - [ton\_signMessage](#ton-signmessage)
-  - [ton\_getNaclBoxPublicKey](#ton-getnaclboxpublickey)
-  - [ton\_getSignature](#ton-getsignature)
-  - [ton\_crypto\_generate\_random\_bytes](#ton-crypto-generate-random-bytes)
-  - [ton\_encryptMessage](#ton-encryptmessage)
-  - [ton\_decryptMessage](#ton-decryptmessage)
-  - [ton\_subscribe](#ton-subscribe)
-  - [ton\_unsubscribe](#ton-unsubscribe)
+  - [wallet\_getSdkVersion](#wallet_getsdkversion)
+  - [wallet\_requestPermissions](#wallet_requestpermissions)
+  - [wallet\_getPermissions](#wallet_getpermissions)
+  - [wallet\_watchAsset](#wallet_watchasset)
+  - [ton\_account](#ton_account)
+  - [ton\_endpoint](#ton_endpoint)
+  - [ton\_sendTransaction](#ton_sendtransaction)
+  - [ton\_sendRawTransaction](#ton_sendrawtransaction)
+  - [ton\_signMessage](#ton_signmessage)
+  - [ton\_getNaclBoxPublicKey](#ton_getnaclboxpublickey)
+  - [ton\_getSignature](#ton_getsignature)
+  - [ton\_crypto\_generate\_random\_bytes](#ton_crypto_generate_random_bytes)
+  - [ton\_encryptMessage](#ton_encryptmessage)
+  - [ton\_decryptMessage](#ton_decryptmessage)
+  - [ton\_subscribe](#ton_subscribe)
+  - [ton\_unsubscribe](#ton_unsubscribe)
 - [Events](#events)
   - [message](#message)
   - [endpointChanged](#endpointchanged)
