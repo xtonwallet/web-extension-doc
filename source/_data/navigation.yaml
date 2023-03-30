@@ -89,6 +89,20 @@
       "path_ru": "ru/ui/pin_code.html"
     },
     {
+      "text": "Permissions",
+      "text_ru": "Разрешения",
+      "type": "link",
+      "path": "ui/permissions.html",
+      "path_ru": "ru/ui/permissions.html"
+    },
+    {
+      "text": "Proxy",
+      "text_ru": "Прокси",
+      "type": "link",
+      "path": "ui/proxy.html",
+      "path_ru": "ru/ui/proxy.html"
+    },
+    {
       "text": "Backup",
       "text_ru": "Резервная копия",
       "type": "label"

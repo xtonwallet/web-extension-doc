@@ -28,6 +28,8 @@ if (window.ton.isXTONWallet == true) { // if you want to check that wallet is XT
 
 If you want to detect some extended standard, you have to check if `window.ton.isTEPs[standard_number]` is true
 
+You also can use [TON Connect 2.0](https://github.com/ton-connect/sdk)
+
 # Demo page
 
 All methods from specification TEPs are available for the testing on [demo page](https://demopage.xtonwallet.com/)
